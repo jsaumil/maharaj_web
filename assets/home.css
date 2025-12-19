@@ -1,0 +1,278 @@
+/* ================================
+   HOME PAGE – MOBILE RESPONSIVE CSS
+   ================================ */
+
+/* -------- GLOBAL FIXES -------- */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/* new */
+@media (max-width: 768px) {
+
+  /* 1. Kill horizontal scroll globally */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* 2. Fix container padding */
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    max-width: 100%;
+  }
+
+  /* 3. Fix slick card overflow */
+  .chief-card {
+    padding-right: 0;
+  }
+
+  .chef-card-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* 4. Disable slick arrows on mobile */
+  .meet-our-expert .slick-prev,
+  .meet-our-expert .slick-next {
+    display: none !important;
+  }
+
+}
+
+
+/* -------- HERO SECTION -------- */
+@media (max-width: 768px) {
+
+  /* .hero-banner {
+    margin-top: 90px;
+  } */
+   .hero-banner {
+    margin-top: 80px;   /* instead of 120px */
+    padding-bottom: 20px;
+  }
+
+  .hero-banner-wrapper {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-banner .left-col{
+    width: 100%;
+    /* align-items: center; */
+  }
+  /* .hero-banner .right-col {
+    width: 100%;
+  } */
+   .hero-banner > .container > .hero-banner-wrapper > .right-col {
+    display: none;
+  }
+
+  .hero-banner .left-col {
+    gap: 20px;
+  }
+
+  .hero-banner .hero-heading {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  /* new */
+  .hero-heading {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+
+  .hero-banner .hero-heading span {
+    padding: 4px 12px;
+  }
+  /* new */
+  .hero-heading span {
+    display: inline-block;
+    background-color: var(--primary-bg-color);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+  }
+  /* new */
+  .hero-heading br {
+    display: none;
+  }
+  /* new */
+  /* .hero-heading::after {
+    content: " Anytime, Anywhere";
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 6px;
+  } */
+
+  /* .hero-banner .description {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0;
+  } */
+   .hero-banner .description {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 320px;
+    margin: 0 auto 20px;
+  }
+
+  /* .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  } */
+
+  .hero-cta {
+    width: 100%;
+    gap: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+
+  /* .cta-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+    margin-right: 0;
+  } */
+   .cta-btn {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+}
+
+/* -------- HERO FLOATING TAGS -------- */
+@media (max-width: 768px) {
+
+  .hero-banner-tag {
+    position: static;
+    margin: 6px auto;
+  }
+
+}
+
+/* -------- CATEGORY SLIDER -------- */
+@media (max-width: 768px) {
+
+  .category-slider {
+    padding: 30px 0;
+  }
+
+  .category-slide-wrapper {
+    max-width: 140px;
+    margin-right: 10px;
+  }
+
+}
+
+/* -------- MEET OUR EXPERTS -------- */
+@media (max-width: 768px) {
+  
+    .meet-our-expert {
+    padding-top: 30px;   /* instead of 60px */
+  }
+
+  .meet-our-expert .section-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .meet-our-expert .section-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .chef-card-wrapper {
+    margin-top: 30px;
+  }
+
+}
+
+/* -------- COOKING EXPERIENCE -------- */
+@media (max-width: 768px) {
+
+  .cooking-experience-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .cooking-experience .left-col {
+    padding-right: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .cooking-experience .type-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cooking-experience > .container > .cooking-experience-wrapper > .left-col {
+    display: none;
+  }
+
+}
+
+/* -------- WHY CHOOSE -------- */
+@media (max-width: 768px) {
+
+  .choose-card-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card-item-title {
+    font-size: 16px;
+  }
+
+}
+
+/* -------- TESTIMONIAL -------- */
+@media (max-width: 768px) {
+
+  .what-our-customer .content-wrapper {
+    flex-direction: column;
+  }
+
+}
+
+/* -------- CTA SECTION -------- */
+@media (max-width: 768px) {
+
+  .cta-section-wrapper .cta_row {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .cta-section-wrapper .cta_row .cta_col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta_col .cta-logo {
+    position: static;
+  }
+
+}
